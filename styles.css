@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Rubik;
+}
+
+:root {
+  --btn-primary-background: #ff3f3f;
+  --btn-primary-color: #fff;
+}
+
+body {
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(96, 209, 243, 0.1)), to(rgba(255, 255, 255, 0.8)));
+  background: linear-gradient(to bottom, rgba(96, 209, 243, 0.1), rgba(255, 255, 255, 0.8));
+}
+
+section {
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  position: relative;
+  margin: auto;
+  margin-top: 1rem;
+  gap: 2rem;
+}
+
+header .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 3rem;
+}
+
+header .top .logo {
+  margin-right: auto;
+  font-size: 1.8rem;
+}
+
+header .top .search-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid black;
+  gap: 0.4rem;
+}
+
+header .top .search-bar input {
+  outline: none;
+  border: 0;
+  font-weight: 600;
+  font-size: 1rem;
+  background: none;
+}
+
+header .top .search-bar i {
+  font-size: 0.9rem;
+}
+
+header .top .email,
+header .top .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.4rem;
+  font-weight: 600;
+}
+
+header .top .email i,
+header .top .phone i {
+  color: black;
+}
+
+header nav {
+  width: 100%;
+  background: #fff;
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3rem;
+}
+
+header nav ul li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+header nav ul .language {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.4rem;
+}
+
+header nav ul button {
+  color: var(--btn-primary-color);
+  background: var(--btn-primary-background);
+  font-size: 1.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.4rem;
+  border: 0;
+  border-radius: 8px;
+  width: 177px;
+  height: 53px;
+  cursor: pointer;
+  margin-left: -1.5rem;
+}
+
+header nav ul button i {
+  font-size: 0.9rem;
+}
+
+.hero {
+  width: 90%;
+  height: 100%;
+  margin-left: auto;
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 200px;
+}
+
+.hero .left h1 {
+  font-family: 'Barlow ';
+  font-size: 5.625rem;
+  max-width: 683px;
+  background: url("./shape.png");
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
+.hero .left .desc {
+  font-size: 1.5rem;
+  max-width: 520px;
+  margin-top: 2rem;
+}
+
+.hero .left .buttons {
+  margin-top: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  margin-left: 2rem;
+}
+
+.hero .left .buttons .btn {
+  font-size: 1.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 0;
+}
+
+.hero .left .buttons .btn-primary {
+  color: var(--btn-primary-color);
+  background: var(--btn-primary-background);
+  width: 177px;
+  height: 53px;
+}
+
+.hero .left .buttons .btn-secondary {
+  border: 2px solid #000;
+  width: 264px;
+  height: 53px;
+  background: none;
+}
+
+.hero .left .rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 2.5rem;
+  gap: 2rem;
+  position: relative;
+  height: 100px;
+  margin-top: 1.5rem;
+}
+
+.hero .left .rating .number span {
+  font-family: 'Barlow ';
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.hero .left .rating .right {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero .left .rating .right p {
+  font-size: 0.9rem;
+  color: darkgray;
+}
+
+.hero .left .rating .right .stars i {
+  color: goldenrod;
+}
+
+.second-section {
+  background: #fff3d4;
+}
+
+.features {
+  width: 1170px;
+  height: 215px;
+  margin: auto;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 100;
+  background: #fff;
+}
+
+.features .feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 1rem;
+}
+
+.features .feature i {
+  font-size: 3rem;
+}
+
+.features .feature .pink {
+  color: #ff8282;
+}
+
+.features .feature .green {
+  color: #289fa3;
+}
+
+.features .feature .orange {
+  color: #fabd6e;
+}
+
+.features .feature .content h4 {
+  font-size: 0.9rem;
+  color: darkgray;
+  margin-bottom: 1rem;
+}
+
+.features .feature .content h3 {
+  max-width: 230px;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+/*# sourceMappingURL=styles.css.map */
