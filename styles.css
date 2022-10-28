@@ -7,9 +7,37 @@
   font-family: Rubik;
 }
 
+html {
+  font-size: 100%;
+}
+
+.btn {
+  font-size: 1.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 0;
+}
+
+.btn-primary {
+  color: var(--btn-primary-color);
+  background: var(--btn-primary-background);
+  width: 177px;
+  height: 53px;
+}
+
 :root {
   --btn-primary-background: #ff3f3f;
   --btn-primary-color: #fff;
+  --label-color: #eb4343;
 }
 
 body {
@@ -294,6 +322,26 @@ header nav ul button i {
   color: goldenrod;
 }
 
+.hero .right .image-container {
+  width: 100%;
+}
+
+.hero .right .image-container img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1050px) {
+  .image-container {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  nav {
+    display: none;
+  }
+}
+
 .second-section {
   background: #fff3d4;
 }
@@ -359,5 +407,134 @@ header nav ul button i {
   max-width: 230px;
   font-weight: 400;
   font-size: 1.5rem;
+}
+
+.second-section .hero-text {
+  border: 1px solid transparent;
+  text-align: center;
+}
+
+.second-section .hero-text h2 {
+  margin-top: 255px;
+  font-family: 'Barlow ';
+  font-weight: bold;
+  font-size: 3.875rem;
+  background: url("./shape.png");
+  background-repeat: no-repeat;
+  background-position: 53% -20%;
+  background-size: 17%;
+}
+
+.second-section .hero-text p {
+  margin-top: 19px;
+  font-size: 1.5rem;
+}
+
+.second-section .card-container {
+  margin-top: 146px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 52px;
+}
+
+.second-section .card-container .card {
+  width: 1171px;
+  height: 420px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 120px;
+  border-radius: 10px;
+  padding: 50px 0;
+}
+
+.second-section .card-container .card .img-container {
+  width: 324px;
+}
+
+.second-section .card-container .card .img-container img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.second-section .card-container .card .content {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  max-width: 587px;
+}
+
+.second-section .card-container .card .content p:nth-child(1) {
+  text-transform: uppercase;
+  color: var(--label-color);
+  font-size: 1.1rem;
+}
+
+.second-section .card-container .card .content h3 {
+  margin-top: 17px;
+  font-family: 'Barlow ';
+  font-size: 2.625rem;
+}
+
+.second-section .card-container .card .content p:nth-child(3) {
+  margin-top: 32px;
+  font-size: 1.5rem;
+}
+
+.second-section .card-container .card .content i {
+  margin-top: 25px;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.second-section .end-text {
+  margin-top: 133px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.second-section .end-text h2 {
+  font-family: 'Barlow ';
+  font-size: 3rem;
+}
+
+.second-section .end-text .btn {
+  margin-top: 97px;
+  margin-bottom: 173px;
+}
+
+@media only screen and (max-width: 1450px) {
+  html {
+    font-size: 85%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
