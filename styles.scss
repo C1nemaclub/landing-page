@@ -28,6 +28,7 @@ html {
 :root {
   --btn-primary-background: #ff3f3f;
   --btn-primary-color: #fff;
+  --accent-color: #1bacb0;
   --label-color: #eb4343;
 }
 
@@ -59,11 +60,13 @@ header {
   margin: auto;
   margin-top: 1rem;
   gap: 2rem;
+  position: relative;
   .top {
+    position: relative;
     display: flex;
     width: 100%;
     justify-content: space-between;
-    gap: 3rem;
+    gap: 0rem;
     .logo {
       margin-right: auto;
       font-size: 1.8rem;
@@ -250,12 +253,13 @@ header {
 
 .second-section {
   background: #fff3d4;
+  padding: 1rem;
 }
 .features {
-  width: 1170px;
+  width: 100%;
+  max-width: 1170px;
   height: 215px;
   margin: auto;
-
   position: absolute;
   top: 0%;
   left: 50%;
@@ -284,7 +288,7 @@ header {
     }
     .content {
       h4 {
-        font-size: 0.9rem;
+        font-size: 0.875rem;
         color: darkgray;
         margin-bottom: 1rem;
       }
@@ -324,17 +328,20 @@ header {
     flex-direction: column;
     gap: 52px;
     .card {
-      width: 1171px;
-      height: 420px;
+      width: 100%;
+      max-width: 1171px;
+      min-height: 420px;
+      height: 100%;
       background: #fff;
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 120px;
       border-radius: 10px;
-      padding: 50px 0;
+      padding: 50px 50px;
       .img-container {
         width: 324px;
+        min-width: 250px;
         img {
           width: 100%;
           object-fit: cover;
@@ -373,6 +380,7 @@ header {
     h2 {
       font-family: 'Barlow ';
       font-size: 3rem;
+      text-align: center;
     }
     .btn {
       margin-top: 97px;
@@ -381,8 +389,88 @@ header {
   }
 }
 
+@media only screen and (max-width: 824px) {
+  .card-container {
+    .card {
+      flex-direction: column;
+    }
+  }
+}
+
 @media only screen and (max-width: 1450px) {
   html {
     font-size: 85%;
+  }
+}
+
+.third-section {
+  margin-top: 6.25rem;
+  .content {
+    margin: auto;
+    width: 80%;
+  }
+  .links-container {
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+
+    h2:not(.logo) {
+      font-size: 1.75rem;
+      font-family: 'Barlow';
+    }
+    h2 {
+      margin-bottom: 2rem;
+    }
+    ul {
+      font-size: 1.125rem;
+      list-style: none;
+      li:not(li:last-child) {
+        margin-bottom: 1rem;
+      }
+      li {
+        color: #343434;
+      }
+    }
+    .address {
+      p,
+      .socials {
+        margin-bottom: 2.25em;
+      }
+      h3 {
+        margin-bottom: 0.5em;
+        color: #ccc;
+      }
+      .form {
+        display: flex;
+        gap: 0.75rem;
+        input {
+          padding: 0.4em 1em;
+          border-radius: 0.625rem;
+          font-size: 1rem;
+          outline: none;
+        }
+      }
+    }
+  }
+  .copy {
+    margin-top: 6.875em;
+    text-align: center;
+    color: #343434;
+  }
+}
+
+@media only screen and (max-width: 1014px) {
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .links-container {
+      max-width: 350px;
+      flex-direction: column;
+      h2:not(h2:last-child) {
+        margin-top: 1em;
+      }
+    }
   }
 }
